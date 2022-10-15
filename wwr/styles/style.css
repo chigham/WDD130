@@ -15,7 +15,7 @@ nav a {
     padding: 35px;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg h1, #hero-msg h4, #rogue-river-msg h1 {
     text-align: center;
     text-shadow: 3px 3px 20px #f4f1bb,
     -2px 1px 30px #f4f1bb;
@@ -170,23 +170,23 @@ nav {
     justify-content: space-around;
 }
 
-#hero {
+#hero, #rogue-river {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
 }
 
-#hero-box {
+#hero-box, #rogue-river-box {
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
 }
 
-#hero-img {
+#hero-img, #rogue-river-img {
     width: 100%;
 }
 
-#hero-msg {
+#hero-msg, #rogue-river-msg {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
@@ -199,6 +199,12 @@ nav {
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr 5fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
 }
 
 .card-img, .mountains {
@@ -220,6 +226,49 @@ nav {
     grid-row: 2/3;
 }
 
+.rivers-grid-heading {
+    grid-column: 1/8;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.rivers-grid-card {
+    display: grid;
+    grid-template-columns: 7fr 6fr;
+    grid-template-rows: 1fr 3fr;
+    border: 1px solid black;
+}
+
+#products-card {
+    grid-column: 2/3;
+}
+
+#services-card {
+    grid-column: 4/5;
+}
+
+#adventures-card {
+    grid-column: 6/7;
+}
+
+.card-heading {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.sale-items {
+    list-style-type: none;
+    text-align: left;
+    margin-left: -20px;
+}
+
+.sale-prices {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 20px;
+}
+
 .mountains {
     grid-column: 2/7;
     grid-row: 5/8;
@@ -231,8 +280,23 @@ nav {
     transform: scale(1.1);
 }
 
+.rivers-grid-card:hover {
+    opacity: .8;
+    transform: scale(1.1);
+    background-color: #5ca4a9;
+}
+
+#rates-book-button {
+    grid-column: 6/7;
+    grid-row: 4/5;
+}
+
+#rates-book-button:hover {
+    transform: scale(1.1)
+}
+
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .rivers-grid {
         display: block;
         height: auto;
     }
@@ -246,7 +310,7 @@ nav {
     #hero {
         margin-top: 0;
     }
-    #hero-msg {
+    #hero-msg, #rogue-river-msg {
         margin-top: 0;
     }
     #hero-msg h4 {
@@ -256,7 +320,7 @@ nav {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+    .rivers-card, .camping-card, .rapids-card, #products-card, #servics-card, #adventures-card { 
         margin: 50px auto;
         width: 60%;
     }
