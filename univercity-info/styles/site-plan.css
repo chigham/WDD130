@@ -8,7 +8,7 @@ Fonts are separated by a | */
   --primary-color: #8C52FF   ;
   --secondary-color: #4552C4 ;
   --accent1-color: #FFD400;
-  --accent2-color: #E986CF;
+  --accent2-color: #F2BAE3;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "IM Fell French Canon SC";
@@ -18,7 +18,7 @@ Fonts are separated by a | */
   --headline-color-on-white: #8C52FF;  /* headlines on a white background */ 
   --headline-color-on-color: #F7F7FF; /* headlines on a colored background */ 
   --paragraph-color-on-white: #4552C4; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #E986CF; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: #F2BAE3; /* paragraph text on a colored background */ 
   --paragraph-background-color: #8C52FF  ;
   --nav-link-color: #8C52FF;
   --nav-background-color: #FFD400;
@@ -65,7 +65,7 @@ header > h1, header > h2 {
 
 p {
   font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
+  color: var(--paragraph-color-on-white);
   padding: 1em;
 }
 .colors {
@@ -176,6 +176,7 @@ nav a:hover {
 }
 
 .wireframe {
-  width: 60%;
+  width: 30%;
   justify-content: center;
+  border: 1px solid black;
 }
