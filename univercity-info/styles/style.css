@@ -3,3 +3,7 @@
     max-height: 100px;
     border: 1px solid black;
 }
+
+img {
+    max-width: 200px;
+}
