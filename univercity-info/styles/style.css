@@ -306,7 +306,7 @@ header > h1, header > h2 {
 #news-grid {
     display: grid;
     grid-template-columns: 1600px;
-    grid-template-rows: 2fr 7fr 3fr;
+    grid-template-rows: 1fr 9fr 2fr;
 }
 
 #news-grid-trending {
@@ -331,7 +331,7 @@ header > h1, header > h2 {
 #news-grid-featured {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 3fr 50fr 1fr;
 }
 
 .news-articles-grid-featured {
