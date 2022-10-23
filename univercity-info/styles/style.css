@@ -306,7 +306,7 @@ header > h1, header > h2 {
 #news-grid {
     display: grid;
     grid-template-columns: 1600px;
-    grid-template-rows: 1fr 9fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
 }
 
 #news-grid-trending {
@@ -315,8 +315,9 @@ header > h1, header > h2 {
     grid-template-rows: 1fr 4fr;
 }
 
-.news-grid-heading {
+#news-grid-trending-heading, #news-grid-featured-heading {
     text-align: left;
+    vertical-align: bottom;
     padding-left: 5%;
     grid-column: 1/6;
     grid-row: 1/2;
@@ -330,11 +331,11 @@ header > h1, header > h2 {
 
 #news-grid-featured {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 50fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 10fr 1fr;
 }
 
-.news-articles-grid-featured {
+#news-articles-grid-featured {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -346,6 +347,7 @@ header > h1, header > h2 {
     grid-template-rows: 2fr 1fr;
     list-style: none;
     max-width: 225px;
+    max-height: 350px;
     border: 1px solid black;
     padding-left: 1%;
     padding-right: 1%;
