@@ -334,7 +334,7 @@ header > h1, header > h2 {
 #news-articles-grid-trending {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr 3fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr 3fr 3fr 1fr;
     max-width: 100%;
 }
 
@@ -391,8 +391,14 @@ header > h1, header > h2 {
 #featured-10 {grid-column: 5/6; grid-row: 5/6;}
 
 .show-more {
-    grid-row: 3/4;
+    grid-column: 1/2;
+    grid-row: 6/7;
+    width: 50%;
+    height: 25%;
+    margin-left: 5%;
 }
+
+
 
 footer {
     background-color: var(--nav-background-color);
