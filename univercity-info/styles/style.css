@@ -376,6 +376,9 @@ header > h1, header > h2 {
 }
 
 .news-article-text:hover {
+    color: var(--paragraph-color-on-white);
+    background-color: var(--paragraph-color-on-color);
+    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -487,4 +490,18 @@ footer p a:hover {
     width: 100px;
     height: 100px;
     border: 1px solid black;
+}
+
+#musk-img-404 {
+    place-content: center;
+    display: flex;
+}
+
+#musk-img-404 img {
+    justify-content: center;
+    width: 40%
+}
+
+.text-404 {
+    text-align: center;
 }
