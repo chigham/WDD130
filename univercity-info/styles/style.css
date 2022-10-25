@@ -310,12 +310,6 @@ header > h1, header > h2 {
     justify-content: center;
 }
 
-/*#news-grid-trending {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}*/
-
 #news-grid-trending-heading {
     text-align: left;
     vertical-align: bottom;
